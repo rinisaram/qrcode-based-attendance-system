@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+<style>
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  
+  .container {
+    display: flex;
+    width: 80%; /* Adjust container width as needed */
+  }
+  
+  .left-image {
+    width: auto;
+    height: 300px; /* Set image width to half the container */
+    
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%; /* Set login box width to half the container */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .form-group {
+    display: flex; /* Arrange icons and text boxes side-by-side */
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .form-group i {
+    margin-right: 10px; /* Spacing between icon and text box */
+    color: #3498db; /* Adjust icon color */
+  }
+  
+  .form-group input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Text box spans full width */
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: white;
+    background-color: #3498db; /* Adjust button color */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Button hover effect */
+  }
+  
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2>Login</h2>
+      <img src="stu.jpg" alt="Login Page Image" class="left-image">
+
+      <div class="form-group">
+        <i class="fas fa-user"></i> <input type="text" name="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <i class="fas fa-lock"></i> <input type="password" name="password" placeholder="Enter Password" required>
+      </div>
+      <div class="button-container">
+        <a href="tchrview.html" class="button">Login </a>
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
